@@ -1,0 +1,3 @@
+/home/kazu/git/C_tools/build/CMakeFiles/matrix_tool.dir
+/home/kazu/git/C_tools/build/CMakeFiles/edit_cache.dir
+/home/kazu/git/C_tools/build/CMakeFiles/rebuild_cache.dir
