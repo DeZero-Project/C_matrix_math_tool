@@ -4,7 +4,7 @@
 typedef struct { 
     int rows; 
     int cols;
-     float *data;
+    double *data;
  } Matrix;
 
 Matrix *create_matrix(int rows, int cols);

@@ -1,5 +1,5 @@
-CMakeFiles/matrix_tool.dir/src/main.c.o: \
- /home/kazu/git/C_tools/src/main.c /usr/include/stdc-predef.h \
+CMakeFiles/matrix_tool.dir/src/matrix.c.o: \
+ /home/kazu/git/C_tools/src/matrix.c /usr/include/stdc-predef.h \
  /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -47,5 +47,5 @@ CMakeFiles/matrix_tool.dir/src/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/assert.h \
  /home/kazu/git/C_tools/src/matrix.h

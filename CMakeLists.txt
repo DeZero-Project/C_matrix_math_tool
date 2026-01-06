@@ -15,6 +15,7 @@ include_directories(include)
 # ファイルが増えたらここに追加していく
 set(SOURCES
     src/main.c
+    src/matrix.c
 )
 
 # 6. 実行ファイルの生成設定

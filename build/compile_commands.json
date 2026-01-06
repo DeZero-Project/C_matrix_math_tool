@@ -3,5 +3,10 @@
   "directory": "/home/kazu/git/C_tools/build",
   "command": "/usr/bin/gcc-12  -I/home/kazu/git/C_tools/include  -Wall -Wextra -g -g -o CMakeFiles/matrix_tool.dir/src/main.c.o -c /home/kazu/git/C_tools/src/main.c",
   "file": "/home/kazu/git/C_tools/src/main.c"
+},
+{
+  "directory": "/home/kazu/git/C_tools/build",
+  "command": "/usr/bin/gcc-12  -I/home/kazu/git/C_tools/include  -Wall -Wextra -g -g -o CMakeFiles/matrix_tool.dir/src/matrix.c.o -c /home/kazu/git/C_tools/src/matrix.c",
+  "file": "/home/kazu/git/C_tools/src/matrix.c"
 }
 ]

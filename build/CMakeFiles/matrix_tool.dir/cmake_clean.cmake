@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/matrix_tool.dir/src/main.c.o"
   "CMakeFiles/matrix_tool.dir/src/main.c.o.d"
+  "CMakeFiles/matrix_tool.dir/src/matrix.c.o"
+  "CMakeFiles/matrix_tool.dir/src/matrix.c.o.d"
   "matrix_tool"
   "matrix_tool.pdb"
 )

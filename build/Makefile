@@ -153,6 +153,30 @@ src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_tool.dir/build.make CMakeFiles/matrix_tool.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/matrix.o: src/matrix.c.o
+.PHONY : src/matrix.o
+
+# target to build an object file
+src/matrix.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_tool.dir/build.make CMakeFiles/matrix_tool.dir/src/matrix.c.o
+.PHONY : src/matrix.c.o
+
+src/matrix.i: src/matrix.c.i
+.PHONY : src/matrix.i
+
+# target to preprocess a source file
+src/matrix.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_tool.dir/build.make CMakeFiles/matrix_tool.dir/src/matrix.c.i
+.PHONY : src/matrix.c.i
+
+src/matrix.s: src/matrix.c.s
+.PHONY : src/matrix.s
+
+# target to generate assembly for a file
+src/matrix.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_tool.dir/build.make CMakeFiles/matrix_tool.dir/src/matrix.c.s
+.PHONY : src/matrix.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -165,6 +189,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/matrix.o"
+	@echo "... src/matrix.i"
+	@echo "... src/matrix.s"
 .PHONY : help
 
 
