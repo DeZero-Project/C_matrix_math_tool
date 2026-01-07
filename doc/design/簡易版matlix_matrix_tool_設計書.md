@@ -2,7 +2,7 @@
 
 ## 1. データ構造
 - **構造体定義**: 
-  - `typedef struct { int rows; int cols; float *data; } Matrix;` 
+  - `typedef struct { size_t rows; size_t cols; float *data; } Matrix;` 
         - `rows`: 行の大きさ
         - `cols`: 列の大きさ
         - `*data`: 行列に格納されたデータを指すポインタ
@@ -20,7 +20,7 @@
 ## 3. 関数詳細仕様
 
 ### 3.1 [create_matrix]
-- **プロトタイプ**: `Matrix *create_matrix(int rows, int cols);`
+- **プロトタイプ**: `Matrix *create_matrix(size_t rows, size_t cols);`
 - **引数**:
   - `rows`: 行のサイズ
   - `cols`: 列のサイズ
@@ -97,7 +97,7 @@
 
 - **戻り値**:
   - 成功時：voidのためなし
-  - 失敗時：`fprintf()`を使い`stderr`にメッセージを表示
+  - 失敗時：`fprintf()`を使い`stderr`にメッセージを表示し`return`を返す
 
 - **処理内容（アルゴリズム）**:
   1. if文で引数`data`がNULLではないことを確認
