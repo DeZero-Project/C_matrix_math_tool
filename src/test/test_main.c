@@ -1,8 +1,26 @@
 #include <stdio.h>
 #include "math.h"
+#include "matrix.h"
+
+extern void test_tn01();
+extern void test_tn02();
+extern void test_tn03();
+extern void test_tn04();
+extern void test_te01();
+extern void test_te02();
+extern void test_te03_te04();
+extern void test_te05();
 
 int main(void){
-    int a = 5450;
-    printf("%d\n", a);
+    printf("--- Starting Unit Tests ---\n");
+    test_tn01();
+    test_tn02();
+    test_tn03();
+    test_tn04();
+    test_te01();
+    test_te02();
+    test_te03_te04();
+    test_te05();
+    printf("All tests passed!\n");
     return 0;
 }

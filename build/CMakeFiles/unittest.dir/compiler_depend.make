@@ -34,7 +34,8 @@ CMakeFiles/unittest.dir/src/test/test_main.c.o: ../src/test/test_main.c \
   /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
   /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls.h
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  ../include/matrix.h
 
 CMakeFiles/unittest.dir/src/test/test_matrix.c.o: ../src/test/test_matrix.c \
   /usr/include/stdc-predef.h \
@@ -62,12 +63,20 @@ CMakeFiles/unittest.dir/src/test/test_matrix.c.o: ../src/test/test_matrix.c \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
-  ../include/matrix.h
+  ../include/matrix.h \
+  /usr/include/assert.h \
+  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h
 
 
-../include/matrix.h:
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 ../src/test/test_matrix.c:
+
+../include/matrix.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
@@ -76,6 +85,8 @@ CMakeFiles/unittest.dir/src/test/test_matrix.c.o: ../src/test/test_matrix.c \
 /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/stdint.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
@@ -117,13 +128,21 @@ CMakeFiles/unittest.dir/src/test/test_matrix.c.o: ../src/test/test_matrix.c \
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
+
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
+/usr/include/assert.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h:
 
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
