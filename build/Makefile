@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named matrix_core
+
+# Build rule for target.
+matrix_core: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 matrix_core
+.PHONY : matrix_core
+
+# fast build rule for target.
+matrix_core/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_core.dir/build.make CMakeFiles/matrix_core.dir/build
+.PHONY : matrix_core/fast
+
+#=============================================================================
 # Target rules for targets named matrix_tool
 
 # Build rule for target.
@@ -128,6 +141,19 @@ matrix_tool: cmake_check_build_system
 matrix_tool/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_tool.dir/build.make CMakeFiles/matrix_tool.dir/build
 .PHONY : matrix_tool/fast
+
+#=============================================================================
+# Target rules for targets named unittest
+
+# Build rule for target.
+unittest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unittest
+.PHONY : unittest
+
+# fast build rule for target.
+unittest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittest.dir/build.make CMakeFiles/unittest.dir/build
+.PHONY : unittest/fast
 
 src/main.o: src/main.c.o
 .PHONY : src/main.o
@@ -158,7 +184,7 @@ src/matrix.o: src/matrix.c.o
 
 # target to build an object file
 src/matrix.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_tool.dir/build.make CMakeFiles/matrix_tool.dir/src/matrix.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_core.dir/build.make CMakeFiles/matrix_core.dir/src/matrix.c.o
 .PHONY : src/matrix.c.o
 
 src/matrix.i: src/matrix.c.i
@@ -166,7 +192,7 @@ src/matrix.i: src/matrix.c.i
 
 # target to preprocess a source file
 src/matrix.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_tool.dir/build.make CMakeFiles/matrix_tool.dir/src/matrix.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_core.dir/build.make CMakeFiles/matrix_core.dir/src/matrix.c.i
 .PHONY : src/matrix.c.i
 
 src/matrix.s: src/matrix.c.s
@@ -174,8 +200,56 @@ src/matrix.s: src/matrix.c.s
 
 # target to generate assembly for a file
 src/matrix.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_tool.dir/build.make CMakeFiles/matrix_tool.dir/src/matrix.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_core.dir/build.make CMakeFiles/matrix_core.dir/src/matrix.c.s
 .PHONY : src/matrix.c.s
+
+src/test/test_main.o: src/test/test_main.c.o
+.PHONY : src/test/test_main.o
+
+# target to build an object file
+src/test/test_main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittest.dir/build.make CMakeFiles/unittest.dir/src/test/test_main.c.o
+.PHONY : src/test/test_main.c.o
+
+src/test/test_main.i: src/test/test_main.c.i
+.PHONY : src/test/test_main.i
+
+# target to preprocess a source file
+src/test/test_main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittest.dir/build.make CMakeFiles/unittest.dir/src/test/test_main.c.i
+.PHONY : src/test/test_main.c.i
+
+src/test/test_main.s: src/test/test_main.c.s
+.PHONY : src/test/test_main.s
+
+# target to generate assembly for a file
+src/test/test_main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittest.dir/build.make CMakeFiles/unittest.dir/src/test/test_main.c.s
+.PHONY : src/test/test_main.c.s
+
+src/test/test_matrix.o: src/test/test_matrix.c.o
+.PHONY : src/test/test_matrix.o
+
+# target to build an object file
+src/test/test_matrix.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittest.dir/build.make CMakeFiles/unittest.dir/src/test/test_matrix.c.o
+.PHONY : src/test/test_matrix.c.o
+
+src/test/test_matrix.i: src/test/test_matrix.c.i
+.PHONY : src/test/test_matrix.i
+
+# target to preprocess a source file
+src/test/test_matrix.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittest.dir/build.make CMakeFiles/unittest.dir/src/test/test_matrix.c.i
+.PHONY : src/test/test_matrix.c.i
+
+src/test/test_matrix.s: src/test/test_matrix.c.s
+.PHONY : src/test/test_matrix.s
+
+# target to generate assembly for a file
+src/test/test_matrix.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittest.dir/build.make CMakeFiles/unittest.dir/src/test/test_matrix.c.s
+.PHONY : src/test/test_matrix.c.s
 
 # Help Target
 help:
@@ -185,13 +259,21 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... matrix_core"
 	@echo "... matrix_tool"
+	@echo "... unittest"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
 	@echo "... src/matrix.o"
 	@echo "... src/matrix.i"
 	@echo "... src/matrix.s"
+	@echo "... src/test/test_main.o"
+	@echo "... src/test/test_main.i"
+	@echo "... src/test/test_main.s"
+	@echo "... src/test/test_matrix.o"
+	@echo "... src/test/test_matrix.i"
+	@echo "... src/test/test_matrix.s"
 .PHONY : help
 
 

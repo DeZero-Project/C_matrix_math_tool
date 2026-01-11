@@ -1,3 +1,5 @@
+/home/kazu/git/C_tools/build/CMakeFiles/matrix_core.dir
 /home/kazu/git/C_tools/build/CMakeFiles/matrix_tool.dir
+/home/kazu/git/C_tools/build/CMakeFiles/unittest.dir
 /home/kazu/git/C_tools/build/CMakeFiles/edit_cache.dir
 /home/kazu/git/C_tools/build/CMakeFiles/rebuild_cache.dir

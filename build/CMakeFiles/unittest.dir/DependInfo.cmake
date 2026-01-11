@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kazu/git/C_tools/src/main.c" "CMakeFiles/matrix_tool.dir/src/main.c.o" "gcc" "CMakeFiles/matrix_tool.dir/src/main.c.o.d"
+  "/home/kazu/git/C_tools/src/test/test_main.c" "CMakeFiles/unittest.dir/src/test/test_main.c.o" "gcc" "CMakeFiles/unittest.dir/src/test/test_main.c.o.d"
+  "/home/kazu/git/C_tools/src/test/test_matrix.c" "CMakeFiles/unittest.dir/src/test/test_matrix.c.o" "gcc" "CMakeFiles/unittest.dir/src/test/test_matrix.c.o.d"
   )
 
 # Targets to which this target links.

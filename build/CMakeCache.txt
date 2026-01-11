@@ -191,6 +191,9 @@ MatrixCalcTool_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 MatrixCalcTool_SOURCE_DIR:STATIC=/home/kazu/git/C_tools
 
+//Dependencies for the target
+matrix_tool_LIB_DEPENDS:STATIC=general;m;
+
 
 ########################
 # INTERNAL cache entries

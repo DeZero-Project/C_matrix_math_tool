@@ -8,12 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kazu/git/C_tools/src/main.c" "CMakeFiles/matrix_tool.dir/src/main.c.o" "gcc" "CMakeFiles/matrix_tool.dir/src/main.c.o.d"
+  "/home/kazu/git/C_tools/src/matrix.c" "CMakeFiles/matrix_core.dir/src/matrix.c.o" "gcc" "CMakeFiles/matrix_core.dir/src/matrix.c.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/kazu/git/C_tools/build/CMakeFiles/matrix_core.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

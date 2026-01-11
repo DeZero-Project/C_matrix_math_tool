@@ -1028,6 +1028,18 @@
 			],
 			"type" : "STATIC",
 			"value" : "/home/kazu/git/C_tools"
+		},
+		{
+			"name" : "matrix_tool_LIB_DEPENDS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Dependencies for the target"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "general;m;"
 		}
 	],
 	"kind" : "cache",

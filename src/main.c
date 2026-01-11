@@ -15,7 +15,7 @@ int main(void)
     for (size_t i = 0; i < row * col; i++)
     {
         data_x->data[i] = 2.7;
-        data_y->data[i] = 5.5;
+        data_y->data[i] = 5.0;
     }
     
     Matrix *result = add_matrix(data_x, data_y);

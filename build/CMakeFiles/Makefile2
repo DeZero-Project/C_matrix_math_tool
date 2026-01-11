@@ -63,7 +63,9 @@ CMAKE_BINARY_DIR = /home/kazu/git/C_tools/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/matrix_core.dir/all
 all: CMakeFiles/matrix_tool.dir/all
+all: CMakeFiles/unittest.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,22 +73,50 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/matrix_core.dir/clean
 clean: CMakeFiles/matrix_tool.dir/clean
+clean: CMakeFiles/unittest.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/matrix_core.dir
+
+# All Build rule for target.
+CMakeFiles/matrix_core.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_core.dir/build.make CMakeFiles/matrix_core.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_core.dir/build.make CMakeFiles/matrix_core.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kazu/git/C_tools/build/CMakeFiles --progress-num=1,2 "Built target matrix_core"
+.PHONY : CMakeFiles/matrix_core.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/matrix_core.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kazu/git/C_tools/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/matrix_core.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kazu/git/C_tools/build/CMakeFiles 0
+.PHONY : CMakeFiles/matrix_core.dir/rule
+
+# Convenience name for target.
+matrix_core: CMakeFiles/matrix_core.dir/rule
+.PHONY : matrix_core
+
+# clean rule for target.
+CMakeFiles/matrix_core.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_core.dir/build.make CMakeFiles/matrix_core.dir/clean
+.PHONY : CMakeFiles/matrix_core.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/matrix_tool.dir
 
 # All Build rule for target.
-CMakeFiles/matrix_tool.dir/all:
+CMakeFiles/matrix_tool.dir/all: CMakeFiles/matrix_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_tool.dir/build.make CMakeFiles/matrix_tool.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_tool.dir/build.make CMakeFiles/matrix_tool.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kazu/git/C_tools/build/CMakeFiles --progress-num=1,2,3 "Built target matrix_tool"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kazu/git/C_tools/build/CMakeFiles --progress-num=3,4 "Built target matrix_tool"
 .PHONY : CMakeFiles/matrix_tool.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/matrix_tool.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kazu/git/C_tools/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kazu/git/C_tools/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/matrix_tool.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kazu/git/C_tools/build/CMakeFiles 0
 .PHONY : CMakeFiles/matrix_tool.dir/rule
@@ -99,6 +129,32 @@ matrix_tool: CMakeFiles/matrix_tool.dir/rule
 CMakeFiles/matrix_tool.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_tool.dir/build.make CMakeFiles/matrix_tool.dir/clean
 .PHONY : CMakeFiles/matrix_tool.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/unittest.dir
+
+# All Build rule for target.
+CMakeFiles/unittest.dir/all: CMakeFiles/matrix_core.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittest.dir/build.make CMakeFiles/unittest.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittest.dir/build.make CMakeFiles/unittest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kazu/git/C_tools/build/CMakeFiles --progress-num=5,6,7 "Built target unittest"
+.PHONY : CMakeFiles/unittest.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/unittest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kazu/git/C_tools/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/unittest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kazu/git/C_tools/build/CMakeFiles 0
+.PHONY : CMakeFiles/unittest.dir/rule
+
+# Convenience name for target.
+unittest: CMakeFiles/unittest.dir/rule
+.PHONY : unittest
+
+# clean rule for target.
+CMakeFiles/unittest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittest.dir/build.make CMakeFiles/unittest.dir/clean
+.PHONY : CMakeFiles/unittest.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -1,4 +1,4 @@
-# 1. CMakeの最小バージョンを指定（3.10以上が一般的）
+# 1. CMakeの最小バージョンを指定
 cmake_minimum_required(VERSION 3.10)
 
 # 2. プロジェクト名と言語を指定
@@ -11,17 +11,23 @@ set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Wextra -g")
 # 4. インクルードディレクトリ（ヘッダファイルの場所）を指定
 include_directories(include)
 
-# 5. ソースファイルのリストを定義
-# ファイルが増えたらここに追加していく
-set(SOURCES
-    src/main.c
+# 5. ライブラリを定義
+# ライブラリが増えたらここに追加していく
+set(LIB_SOURCES
     src/matrix.c
 )
+add_library(matrix_core ${LIB_SOURCES})
 
-# 6. 実行ファイルの生成設定
-# 実行ファイル名 "matrix_tool" を SOURCES から作成
-add_executable(matrix_tool ${SOURCES})
+# 6. アプリ本体の実行ファイルを作成
+add_executable(matrix_tool src/main.c)
+# アプリ本体で使用するライブラリリンク
+target_link_libraries(matrix_tool matrix_core m)
 
-# 7. 数学ライブラリ (math.h / -lm) のリンク
-# Linux環境で sqrt などを使うために必要
-target_link_libraries(matrix_tool m)
+# 7. テスト用実行ファイルを作成
+set(TEST_SOURCES
+    src/test/test_matrix.c
+    src/test/test_main.c
+)
+add_executable(unittest ${TEST_SOURCES})
+# テストで使用するライブラリのリンク
+target_link_libraries(unittest matrix_core m)

@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run App (matrix_tool)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/matrix_tool",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Run Test (unittest)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/unittest",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+/usr/bin/gcc-12  -Wall -Wextra -g -g CMakeFiles/unittest.dir/src/test/test_matrix.c.o CMakeFiles/unittest.dir/src/test/test_main.c.o -o unittest  libmatrix_core.a -lm 
