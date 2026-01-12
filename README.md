@@ -26,12 +26,12 @@
 ## 📂 リポジトリ構成
 ```text
 .
-├── src/                # 実装コード (.c, .h, .py)
-├── docs/               # 設計書・要件定義書 (.md)
-│   ├── requirement.md  # 要件定義
-│   └── design_logic.md # 論理設計・アルゴリズム詳説
-├── tests/              # 検証用コード
 ├── build/              # ビルド済みバイナリ (.dll / .so)
+├── docs/               # 設計書・要件定義書 (.md)
+├── src/                # 実装コード (.c, .h)
+├── include/            # ヘッダーコード (.h)
+├── tests/              # 検証用コード
+├── CMakeLists.txt      # Cmakeファイル
 └── README.md
 ```
 
