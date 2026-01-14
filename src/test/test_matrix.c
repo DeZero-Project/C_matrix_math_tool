@@ -139,7 +139,7 @@ void test_sub_te02(){
     Matrix *mat_a = create_matrix(rows, cols);
     Matrix *mat_b = create_matrix(3, cols);
 
-    for (size_t i = 0; i < rows * cols; i++)
+    for (size_t i = 0; i < mat_a->rows * mat_b->cols; i++)
     {
         mat_a->data[i] = 2.0;
         mat_b->data[i] = 2.0;
@@ -156,7 +156,7 @@ void test_sub_te02(){
 }
 
 void test_sub_te03(){
-assert(add_matrix(NULL, NULL) == NULL);
+assert(sub_matrix(NULL, NULL) == NULL);
 int status = print_matrix(NULL);
 assert(status == 1);
 printf("TE-SUB-03: PASS\n");
