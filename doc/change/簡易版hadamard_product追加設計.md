@@ -3,7 +3,7 @@
 
 ## 2. 追加内容
 ### プロトタイプ
-- [hadamard_product]: `Matrix *mul_matrix(const Matrix *data_x, const Matrix *data_y);`
+- `Matrix *hadamard_product(const Matrix *data_x, const Matrix *data_y);`
     - **引数**:
         - `const Matrix *data_x`: 計算に使用する配列
         - `const Matrix *data_y`: 計算に使用する配列
