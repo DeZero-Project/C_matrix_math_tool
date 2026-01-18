@@ -14,6 +14,11 @@ extern void test_te05();
 extern void test_sub_tn01();
 extern void test_sub_te02();
 extern void test_sub_te03();
+
+extern void test_hadamard_products_tn01();
+extern void test_hadamard_products_te01();
+extern void test_hadamard_products_te02();
+
 int main(void){
     printf("--- Starting Unit Tests ---\n");
     test_tn01();
@@ -28,6 +33,10 @@ int main(void){
     test_sub_tn01();
     test_sub_te02();
     test_sub_te03();
+
+    test_hadamard_products_tn01();
+    test_hadamard_products_te01();
+    test_hadamard_products_te02();
     printf("All tests passed!\n");
     return 0;
 }
