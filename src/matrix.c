@@ -131,6 +131,35 @@ Matrix *hadamard_product(const Matrix *data_x, const Matrix *data_y){
     return y;
 
 }
+
+Matrix *dot_product(const Matrix *data_x, const Matrix *data_y){
+    if (data_x == NULL || data_y == NULL)
+    {
+        fprintf(stderr,"引数でポインタが渡されませんでした。\n");
+        return NULL;
+    }
+    if (data_x->cols != data_y->rows)
+    {
+        fprintf(stderr,"行列の形状が一致しませんでした。\n");
+        return NULL;
+    }
+    Matrix *y = create_matrix(data_x->rows, data_y->cols);
+    if(y == NULL) return NULL;
+    for (size_t i = 0; i < data_x->rows; i++)
+    {
+        for (size_t j = 0; j < data_y->cols; j++)
+        {
+            double sum = 0.0;
+            for (size_t k = 0; k < data_x->cols; k++){
+            sum += data_x->data[i * data_x->cols + k] * data_y->data[k * data_y->cols + j];
+        }
+        y->data[i * y->cols + j] = sum;
+    }
+}
+    return y;
+}
+
+
 void free_matrix(Matrix *data){
     if (data == NULL)
     {

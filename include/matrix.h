@@ -12,6 +12,7 @@ int print_matrix(const Matrix *data);
 Matrix *add_matrix(const Matrix *data_x, const Matrix *data_y);
 Matrix *sub_matrix(const Matrix *data_x, const Matrix *data_y);
 Matrix *hadamard_product(const Matrix *data_x, const Matrix *data_y);
+Matrix *dot_product(const Matrix *data_x, const Matrix *data_y);
 void free_matrix(Matrix *data);
 
 #endif

@@ -10,7 +10,7 @@ int main(void)
 
 
     Matrix *data_x = create_matrix(row, col);
-    Matrix *data_y = create_matrix(row, col);
+    Matrix *data_y = create_matrix(3, 2);
 
     for (size_t i = 0; i < row * col; i++)
     {
@@ -18,7 +18,7 @@ int main(void)
         data_y->data[i] = 5.0;
     }
     
-    Matrix *result = hadamard_product(data_x, data_y);
+    Matrix *result = dot_product(data_x, data_y);
     if (result == NULL)
     {
         fprintf(stderr, "計算結果が正しく格納されませんでした。");
