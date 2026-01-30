@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /home/kazu/git/C_tools/build
 
 # The main recursive "all" target.
 all: CMakeFiles/matrix_core.dir/all
+all: CMakeFiles/mtools_wrapper.dir/all
 all: CMakeFiles/matrix_tool.dir/all
 all: CMakeFiles/unittest.dir/all
 .PHONY : all
@@ -74,6 +75,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/matrix_core.dir/clean
+clean: CMakeFiles/mtools_wrapper.dir/clean
 clean: CMakeFiles/matrix_tool.dir/clean
 clean: CMakeFiles/unittest.dir/clean
 .PHONY : clean
@@ -103,6 +105,32 @@ matrix_core: CMakeFiles/matrix_core.dir/rule
 CMakeFiles/matrix_core.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_core.dir/build.make CMakeFiles/matrix_core.dir/clean
 .PHONY : CMakeFiles/matrix_core.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/mtools_wrapper.dir
+
+# All Build rule for target.
+CMakeFiles/mtools_wrapper.dir/all: CMakeFiles/matrix_core.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mtools_wrapper.dir/build.make CMakeFiles/mtools_wrapper.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mtools_wrapper.dir/build.make CMakeFiles/mtools_wrapper.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kazu/git/C_tools/build/CMakeFiles --progress-num=5,6 "Built target mtools_wrapper"
+.PHONY : CMakeFiles/mtools_wrapper.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/mtools_wrapper.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kazu/git/C_tools/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mtools_wrapper.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kazu/git/C_tools/build/CMakeFiles 0
+.PHONY : CMakeFiles/mtools_wrapper.dir/rule
+
+# Convenience name for target.
+mtools_wrapper: CMakeFiles/mtools_wrapper.dir/rule
+.PHONY : mtools_wrapper
+
+# clean rule for target.
+CMakeFiles/mtools_wrapper.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mtools_wrapper.dir/build.make CMakeFiles/mtools_wrapper.dir/clean
+.PHONY : CMakeFiles/mtools_wrapper.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/matrix_tool.dir
@@ -137,7 +165,7 @@ CMakeFiles/matrix_tool.dir/clean:
 CMakeFiles/unittest.dir/all: CMakeFiles/matrix_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittest.dir/build.make CMakeFiles/unittest.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittest.dir/build.make CMakeFiles/unittest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kazu/git/C_tools/build/CMakeFiles --progress-num=5,6,7 "Built target unittest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kazu/git/C_tools/build/CMakeFiles --progress-num=7,8,9 "Built target unittest"
 .PHONY : CMakeFiles/unittest.dir/all
 
 # Build rule for subdir invocation for target.

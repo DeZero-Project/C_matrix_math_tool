@@ -73,29 +73,29 @@ CMakeFiles/unittest.dir/test/test_matrix.c.o: CMakeFiles/unittest.dir/flags.make
 CMakeFiles/unittest.dir/test/test_matrix.c.o: ../test/test_matrix.c
 CMakeFiles/unittest.dir/test/test_matrix.c.o: CMakeFiles/unittest.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kazu/git/C_tools/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/unittest.dir/test/test_matrix.c.o"
-	/usr/bin/gcc-12 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/unittest.dir/test/test_matrix.c.o -MF CMakeFiles/unittest.dir/test/test_matrix.c.o.d -o CMakeFiles/unittest.dir/test/test_matrix.c.o -c /home/kazu/git/C_tools/test/test_matrix.c
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/unittest.dir/test/test_matrix.c.o -MF CMakeFiles/unittest.dir/test/test_matrix.c.o.d -o CMakeFiles/unittest.dir/test/test_matrix.c.o -c /home/kazu/git/C_tools/test/test_matrix.c
 
 CMakeFiles/unittest.dir/test/test_matrix.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/unittest.dir/test/test_matrix.c.i"
-	/usr/bin/gcc-12 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kazu/git/C_tools/test/test_matrix.c > CMakeFiles/unittest.dir/test/test_matrix.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kazu/git/C_tools/test/test_matrix.c > CMakeFiles/unittest.dir/test/test_matrix.c.i
 
 CMakeFiles/unittest.dir/test/test_matrix.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/unittest.dir/test/test_matrix.c.s"
-	/usr/bin/gcc-12 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kazu/git/C_tools/test/test_matrix.c -o CMakeFiles/unittest.dir/test/test_matrix.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kazu/git/C_tools/test/test_matrix.c -o CMakeFiles/unittest.dir/test/test_matrix.c.s
 
 CMakeFiles/unittest.dir/test/test_main.c.o: CMakeFiles/unittest.dir/flags.make
 CMakeFiles/unittest.dir/test/test_main.c.o: ../test/test_main.c
 CMakeFiles/unittest.dir/test/test_main.c.o: CMakeFiles/unittest.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kazu/git/C_tools/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/unittest.dir/test/test_main.c.o"
-	/usr/bin/gcc-12 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/unittest.dir/test/test_main.c.o -MF CMakeFiles/unittest.dir/test/test_main.c.o.d -o CMakeFiles/unittest.dir/test/test_main.c.o -c /home/kazu/git/C_tools/test/test_main.c
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/unittest.dir/test/test_main.c.o -MF CMakeFiles/unittest.dir/test/test_main.c.o.d -o CMakeFiles/unittest.dir/test/test_main.c.o -c /home/kazu/git/C_tools/test/test_main.c
 
 CMakeFiles/unittest.dir/test/test_main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/unittest.dir/test/test_main.c.i"
-	/usr/bin/gcc-12 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kazu/git/C_tools/test/test_main.c > CMakeFiles/unittest.dir/test/test_main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kazu/git/C_tools/test/test_main.c > CMakeFiles/unittest.dir/test/test_main.c.i
 
 CMakeFiles/unittest.dir/test/test_main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/unittest.dir/test/test_main.c.s"
-	/usr/bin/gcc-12 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kazu/git/C_tools/test/test_main.c -o CMakeFiles/unittest.dir/test/test_main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kazu/git/C_tools/test/test_main.c -o CMakeFiles/unittest.dir/test/test_main.c.s
 
 # Object files for target unittest
 unittest_OBJECTS = \
@@ -108,7 +108,7 @@ unittest_EXTERNAL_OBJECTS =
 unittest: CMakeFiles/unittest.dir/test/test_matrix.c.o
 unittest: CMakeFiles/unittest.dir/test/test_main.c.o
 unittest: CMakeFiles/unittest.dir/build.make
-unittest: libmatrix_core.a
+unittest: libmatrix_core.so
 unittest: CMakeFiles/unittest.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kazu/git/C_tools/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable unittest"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/unittest.dir/link.txt --verbose=$(VERBOSE)

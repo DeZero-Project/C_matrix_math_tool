@@ -1,22 +1,27 @@
 [
 {
   "directory": "/home/kazu/git/C_tools/build",
-  "command": "/usr/bin/gcc-12  -I/home/kazu/git/C_tools/include  -Wall -Wextra -g -g -o CMakeFiles/matrix_core.dir/src/matrix.c.o -c /home/kazu/git/C_tools/src/matrix.c",
+  "command": "/usr/bin/cc -Dmatrix_core_EXPORTS -I/home/kazu/git/C_tools/include  -O3 -g -fPIC -Wall -Wextra -fPIC -o CMakeFiles/matrix_core.dir/src/matrix.c.o -c /home/kazu/git/C_tools/src/matrix.c",
   "file": "/home/kazu/git/C_tools/src/matrix.c"
 },
 {
   "directory": "/home/kazu/git/C_tools/build",
-  "command": "/usr/bin/gcc-12  -I/home/kazu/git/C_tools/include  -Wall -Wextra -g -g -o CMakeFiles/matrix_tool.dir/src/main.c.o -c /home/kazu/git/C_tools/src/main.c",
+  "command": "/usr/bin/cc -Dmtools_wrapper_EXPORTS -I/home/kazu/git/C_tools/include -isystem /usr/include/python3.10  -O3 -g -fPIC -Wall -Wextra -fPIC -o CMakeFiles/mtools_wrapper.dir/wrapper/mtools_wrapper.c.o -c /home/kazu/git/C_tools/wrapper/mtools_wrapper.c",
+  "file": "/home/kazu/git/C_tools/wrapper/mtools_wrapper.c"
+},
+{
+  "directory": "/home/kazu/git/C_tools/build",
+  "command": "/usr/bin/cc  -I/home/kazu/git/C_tools/include  -O3 -g -fPIC -Wall -Wextra -o CMakeFiles/matrix_tool.dir/src/main.c.o -c /home/kazu/git/C_tools/src/main.c",
   "file": "/home/kazu/git/C_tools/src/main.c"
 },
 {
   "directory": "/home/kazu/git/C_tools/build",
-  "command": "/usr/bin/gcc-12  -I/home/kazu/git/C_tools/include  -Wall -Wextra -g -g -o CMakeFiles/unittest.dir/test/test_matrix.c.o -c /home/kazu/git/C_tools/test/test_matrix.c",
+  "command": "/usr/bin/cc  -I/home/kazu/git/C_tools/include  -O3 -g -fPIC -Wall -Wextra -o CMakeFiles/unittest.dir/test/test_matrix.c.o -c /home/kazu/git/C_tools/test/test_matrix.c",
   "file": "/home/kazu/git/C_tools/test/test_matrix.c"
 },
 {
   "directory": "/home/kazu/git/C_tools/build",
-  "command": "/usr/bin/gcc-12  -I/home/kazu/git/C_tools/include  -Wall -Wextra -g -g -o CMakeFiles/unittest.dir/test/test_main.c.o -c /home/kazu/git/C_tools/test/test_main.c",
+  "command": "/usr/bin/cc  -I/home/kazu/git/C_tools/include  -O3 -g -fPIC -Wall -Wextra -o CMakeFiles/unittest.dir/test/test_main.c.o -c /home/kazu/git/C_tools/test/test_main.c",
   "file": "/home/kazu/git/C_tools/test/test_main.c"
 }
 ]

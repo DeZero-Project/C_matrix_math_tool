@@ -1,1 +1,1 @@
-/usr/bin/gcc-12  -Wall -Wextra -g -g CMakeFiles/unittest.dir/test/test_matrix.c.o CMakeFiles/unittest.dir/test/test_main.c.o -o unittest  libmatrix_core.a -lm 
+/usr/bin/cc  -O3 -g -fPIC -Wall -Wextra CMakeFiles/unittest.dir/test/test_matrix.c.o CMakeFiles/unittest.dir/test/test_main.c.o -o unittest  -Wl,-rpath,/home/kazu/git/C_tools/build libmatrix_core.so -lm 

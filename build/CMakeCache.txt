@@ -20,22 +20,23 @@ CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
-//No help, variable specified on the command line.
-CMAKE_BUILD_TYPE:STRING=Debug
+//Choose the type of build, options are: None Debug Release RelWithDebInfo
+// MinSizeRel ...
+CMAKE_BUILD_TYPE:STRING=
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
-//No help, variable specified on the command line.
-CMAKE_C_COMPILER:FILEPATH=/usr/bin/gcc-12
+//C compiler
+CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_C_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-12
+CMAKE_C_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-11
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_C_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-12
+CMAKE_C_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-11
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -71,7 +72,7 @@ CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //No help, variable specified on the command line.
-CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE
+CMAKE_EXPORT_COMPILE_COMMANDS:UNINITIALIZED=ON
 
 //Install path prefix, prepended onto install directories.
 CMAKE_INSTALL_PREFIX:PATH=/usr/local
@@ -192,7 +193,10 @@ MatrixCalcTool_IS_TOP_LEVEL:STATIC=ON
 MatrixCalcTool_SOURCE_DIR:STATIC=/home/kazu/git/C_tools
 
 //Dependencies for the target
-matrix_tool_LIB_DEPENDS:STATIC=general;m;
+matrix_core_LIB_DEPENDS:STATIC=general;m;
+
+//Dependencies for the target
+mtools_wrapper_LIB_DEPENDS:STATIC=general;matrix_core;general;Python3::Python;
 
 
 ########################
@@ -249,8 +253,6 @@ CMAKE_EXE_LINKER_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_EXE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_EXPORT_COMPILE_COMMANDS
-CMAKE_EXPORT_COMPILE_COMMANDS-ADVANCED:INTERNAL=1
 //Name of external makefile project generator.
 CMAKE_EXTRA_GENERATOR:INTERNAL=
 //Name of generator.
@@ -326,4 +328,14 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding Python3
+FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/usr/include/python3.10][/usr/lib/x86_64-linux-gnu/libpython3.10.so][cfound components: Development Development.Module Development.Embed ][v3.10.12()]
+//Path to a program.
+_Python3_CONFIG:INTERNAL=/usr/bin/x86_64-linux-gnu-python3.10-config
+_Python3_DEVELOPMENT_EMBED_SIGNATURE:INTERNAL=625d9e0f7a1af1ddb80bfa11fbea90e0
+_Python3_DEVELOPMENT_MODULE_SIGNATURE:INTERNAL=4bc14a0ea6a21ea267e38aa660e9b54b
+//Path to a file.
+_Python3_INCLUDE_DIR:INTERNAL=/usr/include/python3.10
+//Path to a library.
+_Python3_LIBRARY_RELEASE:INTERNAL=/usr/lib/x86_64-linux-gnu/libpython3.10.so
 

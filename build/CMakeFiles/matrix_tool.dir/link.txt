@@ -1,1 +1,1 @@
-/usr/bin/gcc-12  -Wall -Wextra -g -g CMakeFiles/matrix_tool.dir/src/main.c.o -o matrix_tool  libmatrix_core.a -lm 
+/usr/bin/cc  -O3 -g -fPIC -Wall -Wextra CMakeFiles/matrix_tool.dir/src/main.c.o -o matrix_tool  -Wl,-rpath,/home/kazu/git/C_tools/build libmatrix_core.so -lm 

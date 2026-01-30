@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC  -O3 -g -fPIC -Wall -Wextra -shared  -o MTools.so CMakeFiles/mtools_wrapper.dir/wrapper/mtools_wrapper.c.o  -Wl,-rpath,/home/kazu/git/C_tools/build libmatrix_core.so /usr/lib/x86_64-linux-gnu/libpython3.10.so -lm 

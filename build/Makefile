@@ -130,6 +130,19 @@ matrix_core/fast:
 .PHONY : matrix_core/fast
 
 #=============================================================================
+# Target rules for targets named mtools_wrapper
+
+# Build rule for target.
+mtools_wrapper: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mtools_wrapper
+.PHONY : mtools_wrapper
+
+# fast build rule for target.
+mtools_wrapper/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mtools_wrapper.dir/build.make CMakeFiles/mtools_wrapper.dir/build
+.PHONY : mtools_wrapper/fast
+
+#=============================================================================
 # Target rules for targets named matrix_tool
 
 # Build rule for target.
@@ -251,6 +264,30 @@ test/test_matrix.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittest.dir/build.make CMakeFiles/unittest.dir/test/test_matrix.c.s
 .PHONY : test/test_matrix.c.s
 
+wrapper/mtools_wrapper.o: wrapper/mtools_wrapper.c.o
+.PHONY : wrapper/mtools_wrapper.o
+
+# target to build an object file
+wrapper/mtools_wrapper.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mtools_wrapper.dir/build.make CMakeFiles/mtools_wrapper.dir/wrapper/mtools_wrapper.c.o
+.PHONY : wrapper/mtools_wrapper.c.o
+
+wrapper/mtools_wrapper.i: wrapper/mtools_wrapper.c.i
+.PHONY : wrapper/mtools_wrapper.i
+
+# target to preprocess a source file
+wrapper/mtools_wrapper.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mtools_wrapper.dir/build.make CMakeFiles/mtools_wrapper.dir/wrapper/mtools_wrapper.c.i
+.PHONY : wrapper/mtools_wrapper.c.i
+
+wrapper/mtools_wrapper.s: wrapper/mtools_wrapper.c.s
+.PHONY : wrapper/mtools_wrapper.s
+
+# target to generate assembly for a file
+wrapper/mtools_wrapper.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mtools_wrapper.dir/build.make CMakeFiles/mtools_wrapper.dir/wrapper/mtools_wrapper.c.s
+.PHONY : wrapper/mtools_wrapper.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -261,6 +298,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... matrix_core"
 	@echo "... matrix_tool"
+	@echo "... mtools_wrapper"
 	@echo "... unittest"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
@@ -274,6 +312,9 @@ help:
 	@echo "... test/test_matrix.o"
 	@echo "... test/test_matrix.i"
 	@echo "... test/test_matrix.s"
+	@echo "... wrapper/mtools_wrapper.o"
+	@echo "... wrapper/mtools_wrapper.i"
+	@echo "... wrapper/mtools_wrapper.s"
 .PHONY : help
 
 
